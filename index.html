@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://use.typekit.net/avw3ihr.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webgl</title>
+  </head>
+  <body>
+    <div class="tracks-list">
+      <h2 class="tracks-list__title">Choose a track</h2>
+      <ul class="tracks-list__ul">
+        <li class="tracks-list__li">
+          <span class="tracks-list__span"> A night drive</span>
+          <button data-track="a-night-drive" class="tracks-list__button">
+            <img
+              class="tracks-list__img"
+              src="./public/play-button.svg"
+              alt="play icon"
+            />
+          </button>
+        </li>
+        <li class="tracks-list__li">
+          <span class="tracks-list__span"> Let's kick ass </span>
+          <button data-track="let's-kick-ass" class="tracks-list__button">
+            <img
+              class="tracks-list__img"
+              src="./public/play-button.svg"
+              alt="play icon"
+            />
+          </button>
+        </li>
+        <li class="tracks-list__li">
+          <span class="tracks-list__span"> Solve mystery</span>
+          <button data-track="solve-mystery" class="tracks-list__button">
+            <img
+              class="tracks-list__img"
+              src="./public/play-button.svg"
+              alt="play icon"
+            />
+          </button>
+        </li>
+        <li class="tracks-list__li">
+          <span class="tracks-list__span"> Vaporwave </span>
+          <button data-track="vaporwave" class="tracks-list__button">
+            <img
+              class="tracks-list__img"
+              src="./public/play-button.svg"
+              alt="play icon"
+            />
+          </button>
+        </li>
+      </ul>
+    </div>
+    <button class="settings-button">
+      <img src="./public/settings-icon.png" alt="settings icon" />
+    </button>
+    <div class="settings hidden">
+      <button class="settings__close">
+        <img
+          class="settings__close-img"
+          src="./public/close-button.svg"
+          alt="close icon"
+        />
+      </button>
+      <h2 class="settings__title">Settings</h2>
+      <h3 class="settings__subtitle">Bars color</h3>
+      <div class="settings__bar-container">
+        <button
+          data-color="300350"
+          style="background: #300350"
+          class="settings__bar-color"
+        ></button>
+        <button
+          data-color="94167f"
+          style="background: #94167f"
+          class="settings__bar-color"
+        ></button>
+        <button
+          data-color="f72f97"
+          style="background: #f72f97"
+          class="settings__bar-color"
+        ></button>
+        <button
+          data-color="f9ad53"
+          style="background: #f9ad53"
+          class="settings__bar-color"
+        ></button>
+        <button
+          data-color="163cb4"
+          style="background: #163cb4"
+          class="settings__bar-color"
+        ></button>
+      </div>
+      <h3 class="settings__subtitle">Ellipse color</h3>
+      <div class="settings__ellipse-container">
+        <button
+          data-color="300350"
+          style="background: #300350"
+          class="settings__ellipse-color"
+        ></button>
+        <button
+          data-color="94167f"
+          style="background: #94167f"
+          class="settings__ellipse-color"
+        ></button>
+        <button
+          data-color="f72f97"
+          style="background: #f72f97"
+          class="settings__ellipse-color"
+        ></button>
+        <button
+          data-color="f9ad53"
+          style="background: #f9ad53"
+          class="settings__ellipse-color"
+        ></button>
+        <button
+          data-color="163cb4"
+          style="background: #163cb4"
+          class="settings__ellipse-color"
+        ></button>
+      </div>
+    </div>
+    <div class="track hidden">
+      <audio
+        class="track__audio hidden"
+        controls
+        src="/songs/vaporwave.mp3"
+      ></audio>
+      <img
+        class="track__img"
+        src="./public/song-covers/vaporwave.jpg"
+        alt="track cover"
+      />
+      <h2 class="track__label">Vaporwave</h2>
+      <input type="range" class="track__range" value="0" min="0" max="100" />
+      <button class="track__button track__previous">
+        <img
+          class="track__order-img track__order-img--previous"
+          src="./public/next-button.svg"
+          alt="previous icon"
+        />
+      </button>
+      <button class="track__button track__pause" data-state="pause">
+        <img
+          class="track__pause-img"
+          src="./public/pause-button.svg"
+          alt="previous icon"
+        />
+      </button>
+      <button class="track__button track__next">
+        <img
+          class="track__order-img"
+          src="./public/next-button.svg"
+          alt="next icon"
+        />
+      </button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
