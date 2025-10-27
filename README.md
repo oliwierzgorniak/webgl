@@ -9,3 +9,4 @@ This is a 3d music visualizer made in a vaporwave aethetic. It allows you to lis
 ## Resources
 - https://github.com/felixturner/bad-tv-shader
 - https://www.shadertoy.com/view/WldfD2
+- http://sketchfab.com/3d-models/low-poly-art-delorean-db3d6320ea234e2d98938e903421ed59
