@@ -1,6 +1,6 @@
 # Webgl shader music visualizer
 
-This is a 3d music visualizer made in a vaporwave aethetic. It allows you to liste to music and see it's graphical visualization while driving a car. Project made using custom shaders (shader.toy and a libreary) and Three.js.
+This is a 3d music visualizer made in a vaporwave aethetic. It allows you to listen to music and see it's graphical visualization while driving a car. Project made using custom shaders (shader.toy and a libreary) and Three.js.
 
 [Link to website](https://webgl-shaders-visualizer.netlify.app/)
 
